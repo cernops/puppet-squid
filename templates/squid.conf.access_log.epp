@@ -1,0 +1,2 @@
+# access_log fragment for <%= $module %>
+access_log <%= $module %> <%= $entry %>

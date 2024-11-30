@@ -25,13 +25,6 @@ logformat                     <%= logformat_line %>
 <% unless @buffered_logs.nil? -%>
 buffered_logs                 <%= @buffered_logs?'on':'off' %>
 <% end -%>
-<% if @access_log.is_a?(Array) %>
-<% @access_log.each do |access_log_line| -%>
-access_log                    <%= access_log_line %>
-<% end -%>
-<% else -%>
-access_log                    <%= @access_log %>
-<% end -%>
 
 <% if @coredump_dir -%>
 coredump_dir                  <%= @coredump_dir %>
